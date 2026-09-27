@@ -21,6 +21,8 @@
 - 部署方式三种：Node 直跑、Docker、docker compose。
 - `docs/stripped-fields.md`：31 个字段清单、桥内行号、豁免机制真相，
   以及从新版桥重新提取清单的 grep 命令。
+- `docs/deployment.md`：三种网络拓扑的完整命令、三步验证法、排查顺序，
+  以及 `127.0.0.1` 在容器里的常见部署事故。
 - `scripts/start-codex-bridge.sh`：一条命令同时拉起桥（18080）与转接层（18081）并做健康检查。
 
 ### 设计取舍
