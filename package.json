@@ -1,0 +1,39 @@
+{
+  "name": "codex-oauth-strip-proxy",
+  "version": "0.1.0",
+  "description": "A tiny sidecar that strips the parameters the private ChatGPT/Codex OAuth transport rejects, so strict OpenAI-compatible clients (e.g. Dify) can talk to a codex-as-api bridge.",
+  "license": "MIT",
+  "author": "RiroTime",
+  "type": "commonjs",
+  "main": "codex-strip-proxy.js",
+  "files": [
+    "codex-strip-proxy.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node codex-strip-proxy.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "codex",
+    "chatgpt",
+    "codex-as-api",
+    "openai-compatible",
+    "dify",
+    "proxy",
+    "oauth",
+    "sidecar"
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RiroTime/codex-oauth-strip-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RiroTime/codex-oauth-strip-proxy/issues"
+  },
+  "homepage": "https://github.com/RiroTime/codex-oauth-strip-proxy#readme"
+}

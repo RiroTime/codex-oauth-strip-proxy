@@ -1,0 +1,24 @@
+# 依赖 / Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# 日志 / Logs
+*.log
+logs/
+
+# 环境与本地配置 / Env & local config
+.env
+.env.*
+!.env.example
+
+# 备份 / Backups
+*.bak
+*.orig
+*.old
+
+# 编辑器与系统 / Editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

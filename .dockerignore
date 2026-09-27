@@ -1,0 +1,23 @@
+# 镜像里只需要 codex-strip-proxy.js 一个文件
+.git
+.gitignore
+.gitattributes
+.github
+
+node_modules
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 本地环境与产物
+.env
+.env.*
+!.env.example
+
+# 文档与辅助脚本不进镜像
+docs
+scripts
+CHANGELOG.md
+docker-compose.yml
+Dockerfile
+.dockerignore

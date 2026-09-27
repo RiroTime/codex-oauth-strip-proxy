@@ -1,0 +1,32 @@
+# 统一行尾为 LF
+#
+# 本项目的 shell 脚本要在 Linux 容器里运行。若被 Git 转成 CRLF，
+# shebang 行会带 \r，执行时报 "\r: not found"（或 "/bin/sh^M: bad interpreter"）。
+# Dockerfile 带 CRLF 也可能导致构建异常。
+#
+# 下面的规则对所有克隆者生效，优先于个人的 core.autocrlf 设置。
+
+* text=auto eol=lf
+
+# 明确强制 LF 的文本文件
+*.sh         text eol=lf
+*.js         text eol=lf
+*.cjs        text eol=lf
+*.mjs        text eol=lf
+*.json       text eol=lf
+*.yml        text eol=lf
+*.yaml       text eol=lf
+*.md         text eol=lf
+*.example    text eol=lf
+.gitignore   text eol=lf
+.gitattributes text eol=lf
+Dockerfile   text eol=lf
+
+# 二进制文件不做任何转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
